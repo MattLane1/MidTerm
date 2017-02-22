@@ -22,12 +22,50 @@
        
     };
 
+    /* Connect the buttons and watch for clicks. If one occurs, then either add, or take away, from whichever was changed. */
     document.getElementById("LessMilk").onclick = function () {
-        document.getElementById("milkAmount").value = "HAMHAWK";
+        if (parseInt(document.getElementById("MilkAmount").value) > 0)
+            document.getElementById("MilkAmount").value = (parseInt(document.getElementById("MilkAmount").value) - 1);
     };
 
     document.getElementById("MoreMilk").onclick = function () {
+        document.getElementById("MilkAmount").value = (parseInt(document.getElementById("MilkAmount").value) + 1);
+    };
 
+    document.getElementById("LessEggs").onclick = function () {
+        if (parseInt(document.getElementById("EggsAmount").value) > 0)
+            document.getElementById("EggsAmount").value = (parseInt(document.getElementById("EggsAmount").value) - 1);
+    };
+
+    document.getElementById("MoreEggs").onclick = function () {
+        document.getElementById("EggsAmount").value = (parseInt(document.getElementById("EggsAmount").value) + 1);
+    };
+
+    document.getElementById("LessBread").onclick = function () {
+        if (parseInt(document.getElementById("BreadAmount").value) > 0)
+            document.getElementById("BreadAmount").value = (parseInt(document.getElementById("BreadAmount").value) - 1);
+    };
+
+    document.getElementById("MoreBread").onclick = function () {
+        document.getElementById("BreadAmount").value = (parseInt(document.getElementById("BreadAmount").value) + 1);
+    };
+
+    document.getElementById("LessTuna").onclick = function () {
+        if (parseInt(document.getElementById("TunaAmount").value) > 0)
+            document.getElementById("TunaAmount").value = (parseInt(document.getElementById("TunaAmount").value) - 1);
+    };
+
+    document.getElementById("MoreTuna").onclick = function () {
+        document.getElementById("TunaAmount").value = (parseInt(document.getElementById("TunaAmount").value) + 1);
+    };
+
+    document.getElementById("LessLemons").onclick = function () {
+        if (parseInt(document.getElementById("LemonsAmount").value) > 0)
+            document.getElementById("LemonsAmount").value = (parseInt(document.getElementById("LemonsAmount").value) - 1);
+    };
+
+    document.getElementById("MoreLemons").onclick = function () {
+        document.getElementById("LemonsAmount").value = (parseInt(document.getElementById("LemonsAmount").value) + 1);
     };
 
     function onPause() {

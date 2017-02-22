@@ -31,39 +31,43 @@
                     <tr>
                         <td> <strong> Non-Fat Milk </strong></td>
                         <td><input type="button" value="<" class="lessIsMore" id="LessMilk"></td>
-                        <td><input type="text" id="milkAmount" class="amounts" value="0"></td>
+                        <td><input type="text" id="MilkAmount" class="amounts" value="0"></td>
                         <td><input type="button" value=">" class="lessIsMore" id="MoreMilk"></td>
                     </tr>
                     <tr>
                         <td> <strong> Carton Of Eggs </strong></td>
                         <td><input type="button" value="<" class="lessIsMore" id="LessEggs"></td>
-                        <td><strong>1</strong></td>
+                        <td><input type="text" id="EggsAmount" class="amounts" value="0"></td>
                         <td><input type="button" value=">" class="lessIsMore" id="MoreEggs"></td>
                     </tr>
                     <tr>
                         <td> <strong> Whole Wheat Bread </strong></td>
                         <td><input type="button" value="<" class="lessIsMore" id="LessBread"></td>
-                        <td><strong>1</strong></td>
+                        <td><input type="text" id="BreadAmount" class="amounts" value="0"></td>
                         <td><input type="button" value=">" class="lessIsMore" id="MoreBread"></td>
                     </tr>
                     <tr>
                         <td> <strong> Canned Tuna </strong></td>
                         <td><input type="button" value="<" class="lessIsMore" id="LessTuna"></td>
-                        <td><strong>1</strong></td>
+                        <td><input type="text" id="TunaAmount" class="amounts" value="0"></td>
                         <td><input type="button" value=">" class="lessIsMore" id="MoreTuna"></td>
                     </tr>
                     <tr>
                         <td> <strong> Lemons </strong></td>
                         <td><input type="button" value="<" class="lessIsMore" id="LessLemons"></td>
-                        <td><strong>1</strong></td>
+                        <td><input type="text" id="LemonsAmount" class="amounts" value="0"></td>
                         <td><input type="button" value=">" class="lessIsMore" id="MoreLemons"></td>
                     </tr>
                 </table>
             </form>
 
+            <!-- The Save List Button -->
+            <input type="button" value="Save" class="button" id="Save">
+            <!-- The Cancel List Button -->
+            <input type="button" value="Cancel" class="button" id="Cancel">
 
         </div>
-        
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="scripts/platformOverrides.js"></script>
         <script type="text/javascript" src="scripts/index.js"></script>
