@@ -1,4 +1,11 @@
-﻿// For an introduction to the Blank template, see the following documentation:
+﻿/**
+Author: Matthew Lane (200214586)
+DOC: 01/02/2017
+Purpose: A shopping list app, mae for the mid-term.
+File: This is the Index.js area of the application, here the buttons and connected and functions are created. The actual work is handled here. 
+**/
+
+// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkID=397704
 // To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
 // and then run "window.location.reload()" in the JavaScript Console.
@@ -67,6 +74,15 @@
     document.getElementById("MoreLemons").onclick = function () {
         document.getElementById("LemonsAmount").value = (parseInt(document.getElementById("LemonsAmount").value) + 1);
     };
+
+    document.getElementById("Cancel").onclick = function () {
+        document.getElementById("MilkAmount").value = 0;
+        document.getElementById("EggsAmount").value = 0;
+        document.getElementById("BreadAmount").value = 0;
+        document.getElementById("TunaAmount").value = 0;
+        document.getElementById("LemonsAmount").value = 0;
+    };
+    
 
     function onPause() {
         // TODO: This application has been suspended. Save application state here.

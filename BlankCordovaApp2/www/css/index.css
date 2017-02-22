@@ -1,3 +1,10 @@
+/*
+Author: Matthew Lane (200214586)
+DOC: 02/22/2017
+Purpose: A shopping list app, made for the mid-term.
+File: This is thead css area for thead main class. Here, design is completed.
+*/
+
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -36,6 +43,7 @@ body {
     border: 1px solid black;
     width: 160px; 
 }
+
 
 .app {
   /*  background: url(../images/cordova.png) no-repeat center top; */
