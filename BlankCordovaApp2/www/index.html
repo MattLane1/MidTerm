@@ -15,18 +15,52 @@
     </head>
     <body>
         <h1>Shopping List</h1>
+        
+        <!--Allow the user to change the name of the shopping list-->
+        <div class="listName">
+            <!-- Display box -->
+            <input type="text" id="display" class="ListName" name="display" placeholder="Your List Name">
+        </div>
 
-        <!-- Display box -->
-        <input type="text" id="display" class="ListName" name="display" placeholder="Your List Name">
         <div class="app">
-          
-            <ul>
-                <li>Non-Fat Milk  <input type="button" value="<" class="lessIsMore" id="LessMilk"> <strong>1</strong> <input type="button" value=">" class="lessIsMore" id="MoreMilk"> </li>
-                <li>Carton of Eggs</li>
-                <li>Whole Wheat Bread</li>
-                <li>Canned Tuna</li>
-                <li>Lemons</li>
-            </ul>
+
+            <form id="mainForm" name="ShoppingList">
+                <!-- To Do Placeholders -->
+                <!-- These are the blank buttons in the app, ready to recieve tasks. They are also the Finished task, and Remove task buttons. -->
+                <table id="buttons" table border="1" class="itemsList" >
+                    <tr>
+                        <td> <strong> Non-Fat Milk </strong></td>
+                        <td><input type="button" value="<" class="lessIsMore" id="LessMilk"></td>
+                        <td><input type="text" id="milkAmount" class="amounts" value="0"></td>
+                        <td><input type="button" value=">" class="lessIsMore" id="MoreMilk"></td>
+                    </tr>
+                    <tr>
+                        <td> <strong> Carton Of Eggs </strong></td>
+                        <td><input type="button" value="<" class="lessIsMore" id="LessEggs"></td>
+                        <td><strong>1</strong></td>
+                        <td><input type="button" value=">" class="lessIsMore" id="MoreEggs"></td>
+                    </tr>
+                    <tr>
+                        <td> <strong> Whole Wheat Bread </strong></td>
+                        <td><input type="button" value="<" class="lessIsMore" id="LessBread"></td>
+                        <td><strong>1</strong></td>
+                        <td><input type="button" value=">" class="lessIsMore" id="MoreBread"></td>
+                    </tr>
+                    <tr>
+                        <td> <strong> Canned Tuna </strong></td>
+                        <td><input type="button" value="<" class="lessIsMore" id="LessTuna"></td>
+                        <td><strong>1</strong></td>
+                        <td><input type="button" value=">" class="lessIsMore" id="MoreTuna"></td>
+                    </tr>
+                    <tr>
+                        <td> <strong> Lemons </strong></td>
+                        <td><input type="button" value="<" class="lessIsMore" id="LessLemons"></td>
+                        <td><strong>1</strong></td>
+                        <td><input type="button" value=">" class="lessIsMore" id="MoreLemons"></td>
+                    </tr>
+                </table>
+            </form>
+
 
         </div>
         

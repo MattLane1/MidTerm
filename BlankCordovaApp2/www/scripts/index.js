@@ -19,6 +19,15 @@
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+       
+    };
+
+    document.getElementById("LessMilk").onclick = function () {
+        document.getElementById("milkAmount").value = "HAMHAWK";
+    };
+
+    document.getElementById("MoreMilk").onclick = function () {
+
     };
 
     function onPause() {

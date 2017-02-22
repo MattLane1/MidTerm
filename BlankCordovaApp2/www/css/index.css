@@ -31,21 +31,43 @@ body {
     font-size:12px;
 }
 
-.app {
+.listName {
+    font-size: 15px;
+    border: 1px solid black;
+    width: 160px; 
+}
 
+.app {
+  /*  background: url(../images/cordova.png) no-repeat center top; */
     position: absolute;             
-    left: 50%;
-    top: 50%;
-    height: 50px;                  
-    width: 225px;                   
+    left: 25%;
+    right: -10%;
+    top: 5%;
+    height: 80px;                  
+    width: 350px;                   
     text-align: center;
-    padding: 180px 0px 0px 0px;     
-    margin: -115px 0px 0px -112px;
+    padding: 60px 0px 0px 0px;     
+    margin: 0px 0px 0px -80px;
+
+}
+
+.itemsList {
+    font-size: 15px;
+    justify-content: center;
+    border: 1px solid black;
 }
 
 .lessIsMore {
     height:30px;
     width:50px;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content:center;
+}
+
+.amounts {
+    height:30px;
+    width:25px;
     margin:1px 0px;
     font-size: 15px;
 }
